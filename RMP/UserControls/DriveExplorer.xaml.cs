@@ -232,7 +232,7 @@ namespace RMP.UserControls
                 Videos.AddRange(folder.GetFiles("*.mpeg").ToList());
 
                 Music = folder.GetFiles("*.mp3").ToList();
-                Music = folder.GetFiles("*.wav").ToList();
+                Music.AddRange(folder.GetFiles("*.wav").ToList());
 
                 if (this.SelectionChanged != null)
                     this.SelectionChanged(this, sender as TreeView);
