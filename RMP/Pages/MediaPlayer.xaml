@@ -40,6 +40,10 @@
                                         FontFamily="Segoe UI Semilight"  >Zoom</TextBlock>
                 <Slider Name="zoomSlider" VerticalAlignment="Center" ValueChanged="zoomSlider_ValueChanged"                         
        Minimum="0" Maximum="100" Value="0" Width="70"/>
+
+                
+                <TextBlock Foreground="#FF2B2B2B" Margin="15"  VerticalAlignment="Center" FontSize="16pt"
+                                        FontFamily="Segoe UI Semilight">Use your wheelmouse to zoom in/zoom out</TextBlock>
             </StackPanel>
 
         </Grid>
@@ -64,7 +68,7 @@
                 <Slider Name="volumeSlider" VerticalAlignment="Center" ValueChanged="ChangeMediaVolume" 
        Minimum="0" Maximum="1" Value="0.5" Width="70"/>
 
-                <!-- Volume slider. This slider allows you to change the speed of the media playback. -->
+                <!-- Speed slider. This slider allows you to change the speed of the media playback. -->
                 <TextBlock Foreground="#FF2B2B2B" Margin="15"  VerticalAlignment="Center" FontSize="16pt"
                                         FontFamily="Segoe UI Semilight">Speed</TextBlock>
                 <Slider Name="speedRatioSlider" VerticalAlignment="Center" ValueChanged="ChangeMediaSpeedRatio" 

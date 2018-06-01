@@ -46,7 +46,7 @@
                 <Slider Name="volumeSlider" VerticalAlignment="Center" ValueChanged="ChangeMediaVolume" 
        Minimum="0" Maximum="1" Value="0.5" Width="70"/>
 
-                <!-- Volume slider. This slider allows you to change the speed of the media playback. -->
+                <!-- Speed slider. This slider allows you to change the speed of the media playback. -->
                 <TextBlock Foreground="#FFF" Margin="15"  VerticalAlignment="Center" FontSize="16pt"
                                         FontFamily="Segoe UI Semilight">Speed</TextBlock>
                 <Slider Name="speedRatioSlider" VerticalAlignment="Center" ValueChanged="ChangeMediaSpeedRatio" 
