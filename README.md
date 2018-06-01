@@ -13,3 +13,7 @@ I was able to add the Full Screen feature for images and videos, and also, to ad
 I tried to add the file info feature but I couldn't find any native way to read the info.
 
 Thank you very much for the opportunity, and I would really appreciate any feedback.
+
+Supported files:
+
+BMP,PNG, JPEG, MP4, MPEG, MP3, WAV.
