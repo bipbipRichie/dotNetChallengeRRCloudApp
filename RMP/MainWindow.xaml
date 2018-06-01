@@ -1,0 +1,59 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:RMP"
+    xmlns:UserControls="clr-namespace:RMP.UserControls" x:Class="RMP.MainWindow"
+    mc:Ignorable="d"
+    Title="Richie's Media Player"
+    Height="720" 
+    MinHeight="720"
+    Width="1280" 
+    MinWidth="1280"
+    Icon="Resources/iconPlay.png">
+    
+    <!--This will be my Main Window
+    I'll use it to display my user controls and my pages.-->
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+
+        <!--I used a custom control for my Header, basically if i want to add extra logic/features to control the maximize,
+        minimize, help events i can add those here.-->
+        <UserControls:Header/>
+        
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="262*"/>
+                <ColumnDefinition Width="249*"/>
+                <ColumnDefinition Width="762*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--My DriveExplorer Custom Control-->
+            <UserControls:DriveExplorer
+                x:Name="ucDriveExplorer"
+                SelectionChanged="ucDriveExplorer_SelectionChanged"
+                />
+            
+            <!--A frame to show the File List Page-->
+            <Frame 
+                Grid.Column="1"
+                x:Name="frameFiles"
+                NavigationUIVisibility="Hidden"/>
+            
+            <Grid Grid.Column="2">
+                
+               <!--Another Frame to show my Media Pane Page-->
+                <Frame 
+                    x:Name="frameMediaViewer"
+                    NavigationUIVisibility="Hidden" Background="#FF2B2B2B"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>

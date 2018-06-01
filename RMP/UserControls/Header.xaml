@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="RMP.UserControls.Header"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RMP.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="100
+             " d:DesignWidth="1280">
+    <Grid Background="#FF42105F">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock 
+            Margin="491,7,621,13" 
+            Padding="0"
+            TextWrapping="Wrap" 
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Text="RMP"
+            TextAlignment="Center"
+            FontFamily="Segoe UI Semilight"
+            FontSize="50pt" Foreground="White"/>
+
+        <Image
+               Margin="665,16,529,10"
+               Source="/RMP;component/Resources/iconPlay128.png"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"/>
+
+    </Grid>
+</UserControl>
